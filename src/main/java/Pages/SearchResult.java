@@ -7,7 +7,6 @@ import java.util.List;
 
 public class SearchResult extends BasicPage {
     public void findProductFromList(String containsText) {
-        waitUntilPageIsLoaded();
         for (WebElement webElement :
                 searchResults) {
             if (webElement.getText().contains(containsText)) {

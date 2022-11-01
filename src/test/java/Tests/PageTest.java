@@ -26,6 +26,7 @@ public class PageTest {
         WDriver.getWebDriverInstance();
         driver = WDriver.getDriver();
 
+
         HomePage = new HomePage();
         SearchResult = new SearchResult();
         Modal = new Modal();

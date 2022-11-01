@@ -5,7 +5,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class Modal extends BasicPage {
     public void clickBasketBtn() {
-        waitUntilPageIsLoaded();
         clickButton(basketButton);
     }
 

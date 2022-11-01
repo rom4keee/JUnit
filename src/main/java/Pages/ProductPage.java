@@ -5,11 +5,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class ProductPage extends BasicPage {
     public void clickAddToBasket() {
-        waitUntilPageIsLoaded();
         clickButton(addToBasket);
     }
 
-    @FindBy (xpath = "//a[@class='btn btn-primary add-to-basket']")
+    @FindBy (xpath = "/html/body/div[3]/div[5]/div[2]/div[4]/div/div/div/div/div[4]/div[3]/div/a")
     private WebElement addToBasket;
 
 
