@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
-public class PaymentPage extends BasicPage {
+public class PaymentPage extends HomePage {
     public void enterEmailAddress(String email) {
         enterTextIntoField(emailField, email);
     }

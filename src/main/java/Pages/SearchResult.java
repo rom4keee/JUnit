@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class SearchResult extends BasicPage {
+public class SearchResult extends HomePage {
     public void findProductFromList(String containsText) {
         for (WebElement webElement :
                 searchResults) {

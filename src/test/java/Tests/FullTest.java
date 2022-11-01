@@ -1,6 +1,5 @@
 package Tests;
 
-import Pages.BasicPage;
 import org.junit.jupiter.api.*;
 
 class FullTest extends PageTest {

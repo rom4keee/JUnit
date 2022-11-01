@@ -3,7 +3,7 @@ package Pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Basket extends BasicPage {
+public class Basket extends HomePage {
     public void clickCheckoutButton () {
         clickButton(checkoutButton);
     }

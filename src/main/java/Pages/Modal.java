@@ -3,7 +3,7 @@ package Pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Modal extends BasicPage {
+public class Modal extends HomePage {
     public void clickBasketBtn() {
         clickButton(basketButton);
     }
