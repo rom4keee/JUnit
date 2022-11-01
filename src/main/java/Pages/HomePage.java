@@ -1,18 +1,14 @@
 package Pages;
 
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import static Driver.WDriver.*;
 
 public class HomePage extends PageFactory {
-    class CustomConditions {
 
-        private void StringUtils() {
-            throw new IllegalStateException();
-        }
+    public static void clickAcceptCookieButton() { AcceptCookie.click();}
 
-    }
     public static void searchInput(String s) {
         searchField.sendKeys(s);
     }
@@ -21,6 +17,8 @@ public class HomePage extends PageFactory {
         clickButton(searchButton);
     }
 
+    @FindBy(xpath = "/html/body/div[1]/div[2]/button[1]")
+    private static WebElement AcceptCookie;
     @FindBy(xpath = "//*[@id='book-search-form']//input[1]")
     private static WebElement searchField;
 

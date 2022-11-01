@@ -16,7 +16,6 @@ public class WDriver {
         ChromeOptions chromeOptions = new ChromeOptions();
         WebDriver driver = new ChromeDriver(chromeOptions);
         driver.manage().window();
-        driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(WAIT_TIMEOUT, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(PAGE_TIMEOUT, TimeUnit.SECONDS);
         webDriverThreadLocal.set(driver);
@@ -34,7 +33,6 @@ public class WDriver {
                 throw new RuntimeException(e);
             }
             webDriver.quit();
-            webDriverThreadLocal.remove();
         });
     }
 }

@@ -8,7 +8,7 @@ public class ProductPage extends HomePage {
         clickButton(addToBasket);
     }
 
-    @FindBy (xpath = "/html/body/div[3]/div[5]/div[2]/div[4]/div/div/div/div/div[4]/div[3]/div/a")
+    @FindBy (xpath = "/html/body/div[1]/div[5]/div/div/div[1]/div[1]/div[3]/div/div[2]/a[1]")
     private WebElement addToBasket;
 
 

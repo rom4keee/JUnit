@@ -21,7 +21,7 @@ public class SearchResult extends HomePage {
     @FindBy(xpath = "//*[@id='book-search-form']//input[1]")
     private List<WebElement> searchResults;
 
-    @FindBy(xpath = "/html/body/div[2]/div[5]/div[2]/div[4]/div/div/div/div/div[4]/div[1]/a")
+    @FindBy(xpath = "/html/body/div[1]/div[5]/div[2]/div[4]/div/div/div/div/div[4]/div[2]/h3/a")
     private WebElement book;
 
 

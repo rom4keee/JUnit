@@ -18,9 +18,6 @@ public class PaymentPage extends HomePage {
     public String getOrderSubTotal () {
         return getElementText(orderSubTotal);
     }
-    public String getOrderTax () {
-        return getElementText(orderTax);
-    }
 
     @FindBy(xpath = "//input[@name='emailAddress']")
     private static WebElement emailField;
@@ -31,7 +28,5 @@ public class PaymentPage extends HomePage {
     @FindBy(xpath = "//dd[@class='text-right total-price']")
     private static WebElement orderTotal;
 
-    @FindBy(xpath = "//dd[@class='text-right total-tax']")
-    private static WebElement orderTax;
 
 }
