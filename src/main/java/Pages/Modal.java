@@ -10,4 +10,6 @@ public class Modal extends HomePage {
 
     @FindBy (xpath = "//a[@data-default-localized-pattern='Basket / Checkout']")
     private WebElement basketButton;
+    @FindBy (xpath = "//a[@data-default-localized-pattern='Basket / Checkout']")
+    private WebElement basketButton;
 }
